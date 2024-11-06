@@ -16,7 +16,7 @@ def MakeNewPerson():
 for i in range(int(input('amount to generate: '))):
     MakeNewPerson()
 def CheckPerson(Person):
-    print('Stat 1:',PeopleStat1List[Person],
+    print('\nStat 1:',PeopleStat1List[Person],
           '\nStat 2:',PeopleStat2List[Person],
           '\nStat 3:',PeopleStat3List[Person],
           '\nStat 4:',PeopleStat4List[Person])
