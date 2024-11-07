@@ -22,8 +22,13 @@ def MakeNewPerson():
 for i in range(int(input('amount to generate: '))):
     MakeNewPerson()
 def CheckPerson(Person):
-    print('\nStat 1:',PeopleStat1List[Person],
-          '\nStat 2:',PeopleStat2List[Person],
-          '\nStat 3:',PeopleStat3List[Person],
-          '\nStat 4:',PeopleStat4List[Person])
+    Stat1 = PeopleStat1List[Person]
+    Stat2 = PeopleStat2List[Person]
+    Stat3 = PeopleStat3List[Person]
+    Stat4 = PeopleStat4List[Person]
+    print('\nStat 1: ',Stat1,
+          '\nStat 2: ',Stat2,
+          '\nStat 3: ',Stat3,
+          '\nStat 4: ',Stat4,
+          '\nFav word: ',Dictionary[len(Dictionary)%(Stat1*Stat2*Stat3-Stat4)])
 CheckPerson(int(input('What person would you like to check: '))-1)
