@@ -1,8 +1,14 @@
 import random
+Dictionary = []
 PeopleStat1List = []
 PeopleStat2List = []
 PeopleStat3List = []
 PeopleStat4List = []
+File = open("dictionary.txt", "r")  
+Data = File.read()  
+Dictionary = Data.split("\n")  
+File.close() 
+
 def StatMaker(Variance):
     Stat = 1
     for i in range(int(Variance)):
